@@ -1,0 +1,25 @@
+body {
+        font-family: "Times New Roman", serif;
+        background: #eee;
+        color: #000;
+
+        max-width: 750px;
+        margin: auto;
+}
+
+header h1 {
+        text-align: center;
+}
+
+h2 {
+        text-align: left;
+        color: #000;
+}
+
+main {
+        text-align: justify;
+}
+
+footer {
+        text-align: center;
+}
