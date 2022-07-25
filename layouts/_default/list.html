@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language }}">
 {{ partial "head.html" . -}}
 <body>
-{{ partial "header.html" . -}}
 <main>
+{{ partial "header.html" . -}}
 {{ .Content -}}
 <ul>
 {{ range .Pages -}}
@@ -11,7 +11,8 @@
 "2006 Jan 02" }}</time> &ndash; <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{ end -}}
 </ul>
+{{ if not .IsHome }}{{ partial "footer.html" . -}}{{ end }}
 </main>
-{{ partial "footer.html" . -}}
+<br>
 </body>
 </html>
