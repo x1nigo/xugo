@@ -1,6 +1,6 @@
 # x1nigo's hugo theme
 I decided to just make my own theme for hugo. Personally, I find it easier
-to add things instead of removing them &ndash; so this is a ***bare-bones*** build.
+to add things instead of removing them &ndash; so this is a *bare-bones* build.
 
 ## What is hugo?
 Hugo is an open-source static site generator. Unless you want to constantly
