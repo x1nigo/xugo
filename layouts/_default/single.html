@@ -5,14 +5,16 @@
 {{- partial "header.html" . -}}
 <main>
 {{ .Content -}}
+<br>
+<div class="nextprevious">
 {{ with .Site.RegularPages.Next . }}
-<a class="next" href="{{ .RelPermalink }}"><b>Next:</b><br>"{{ .Title }}"</a>
+<a class="next" href="{{ .RelPermalink }}"><div class="next"><b>Next:</b>"{{ .Title }}"</div></a>
 {{ end }}
-<br>
-<br>
 {{ with .Site.RegularPages.Prev . }}
-<a class="previous" href="{{ .RelPermalink }}"><b>Previous:</b><br>"{{ .Title }}"</a>
+<a class="previous" href="{{ .RelPermalink }}"><div class="previous"><b>Previous:</b>"{{ .Title
+}}"</div></a>
 {{ end }}
+</div>
 {{ partial "footer.html" . -}}
 </main>
 <br>
